@@ -1,11 +1,12 @@
 from flask import Flask
 from utils.db import db
 from services.contact import contacts
-from flask_sqlalchemy import SQLAlchemy
+#from flask_sqlalchemy import SQLAlchemy
 from config import DATABASE_CONNECTION
 
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']=DATABASE_CONNECTION
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 #SQLAlchemy(app)
 

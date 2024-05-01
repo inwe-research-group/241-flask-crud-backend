@@ -3,8 +3,8 @@ import os
 
 load_dotenv()
 
-user=os.environ['USER']
 pwd=os.environ['PASSWORD']
+user=os.environ['USER']
 host=os.environ['HOST']
 database=os.environ['DATABASE']
 server=os.environ['SERVER']
